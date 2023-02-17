@@ -21,6 +21,7 @@ export const Menu = () => {
             </div>
         </section>
     `
-    const drinkOrder = element.querySelector('.drinks-list').append(Drink({name: 'espresso', image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png', order: 'false'}))
+    const drinkOrder = element.querySelector('.drinks-list').prepend(Drink({name: 'espresso', image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png', order: 'false'}));
+    
     return element;
 }
