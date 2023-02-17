@@ -9,19 +9,19 @@ export const Menu = () => {
     element.innerHTML = `
         <section class="menu">
             <div class="container">
-            <h2>Naše nabídka</h2>
-            <p class="menu-intro">
-                Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
-            </p>
-            <div class="drinks-list">
-            
-            <div class="order-detail">
-                <a href="/objednavka">Detail objednávky</a>
-            </div>
+                <h2>Naše nabídka</h2>
+                <p class="menu-intro">
+                    Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
+                </p>
+                <div class="drinks-list">
+                    <div class="order-detail">
+                        <a href="/objednavka">Detail objednávky</a>
+                    </div>
+                </div>
             </div>
         </section>
     `
-    const drinkOrder = element.querySelector('.drinks-list').prepend(Drink({name: 'espresso', image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png', order: 'false'}));
+    element.querySelector('.drinks-list').prepend(Drink({name: 'espresso', image: 'https://apps.kodim.cz/daweb/cafelora/assets/cups/romano.png', order: 'false'}));
     
     return element;
 }
