@@ -39,6 +39,8 @@ export const Menu = (props = {}) => {
             ...drinks.map((drink) => Drink(drink))
         );
     }
+    console.log(drinks)
     
     return element;
 }
+

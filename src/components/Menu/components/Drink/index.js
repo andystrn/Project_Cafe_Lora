@@ -1,7 +1,7 @@
 import './style.css';
 import { Layer } from '../Layer';
 
-export const Drink = ( {name, image, ordered} ) => {
+export const Drink = ( {name, image, layers, ordered} ) => {
     const element = document.createElement('div');
     element.classList.add('drink');
     element.innerHTML = `
@@ -11,6 +11,7 @@ export const Drink = ( {name, image, ordered} ) => {
                 </div>
                 <div class="drink__info">
                     <h3>${name}</h3>
+                    <div class="layers"><div/>
                 </div>
             </div>
             <div class="drink__controls">
@@ -19,8 +20,7 @@ export const Drink = ( {name, image, ordered} ) => {
                     </button>
             </div>
     `
-    element.querySelector('.drink__info').append(Layer({color: '#feeeca',
-    label: 'mléčná pěna',}))
+    element.querySelector('.layers').append(...layers.map((item) => Layer(item)));
 
     return element;
 }
