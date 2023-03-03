@@ -1,4 +1,5 @@
 import './style.css';
+//src="https://apps.kodim.cz/daweb/cafelora/assets/map.png"
 
 export const Contact = () => {
     const element = document.createElement('section');
