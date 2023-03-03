@@ -13,7 +13,7 @@ export const HomePage = () => {
     const pageElement = document.createElement('div');
     pageElement.classList.add('page');
 
-    pageElement.append(Header({showMenu: true}), main,Footer());
+    pageElement.append(Header({}), main,Footer());
     
     return pageElement;
 }

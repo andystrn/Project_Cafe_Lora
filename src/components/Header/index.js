@@ -1,6 +1,6 @@
 import './style.css'
 
-export const Header = ( {showMenu} ) => {
+export const Header = ( {showMenu = true} ) => {
     const element = document.createElement('header');
     if (showMenu) {
         element. innerHTML = `
