@@ -5,7 +5,7 @@ import { Footer } from '../../components/Footer';
 
 export const OrderPage = () => {
     const element = document.createElement('div');
-    element.append(Header({}), Footer());
+    element.append(Header({showMenu: false}), Footer());
 
     return element;
 }
